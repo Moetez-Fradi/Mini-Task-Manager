@@ -1,0 +1,87 @@
+Description
+Last Updated:
+Yesterday at 7:02 pm
+Task Management System with Role-Based Access Control (RBAC)
+Project Overview
+This project is a simple task management web application where users can create, assign, and track tasks, with different levels of access based on their roles. The system implements authentication, authorization, and real-time updates to facilitate efficient task tracking.
+Tech Stack
+Backend: NestJS
+NestJS Framework for scalable and modular backend development
+ Prisma for database interaction
+PostgreSQL (hosted on Supabase) for user and task data storage
+JWT-based authentication using a custom auth system ( auth 3adi) 
+Role-Based Access Control (RBAC) using NestJS Guards and Middleware
+WebSockets (NestJS Gateway) for real-time task updates (use socket.io or whatever works for you..) 
+
+Frontend: React.js
+React.js (Vite) for building a responsive frontend
+React Router for navigation and protected routes
+React Query for efficient API data fetching
+TailwindCSS for modern and quick UI styling( use shadcn zeda besh nest7a9ouh forsa tet3lmouh men taw..) 
+Project Features
+1. User Authentication & RBAC
+Users can register and log in using a custom authentication system.
+Role-Based Access Control with the following roles:
+Admin: Manage all users and tasks ( Create and assign tasks to users )
+Employee( normal user)  : View and update their assigned tasks.
+Middleware to check user roles before performing actions.
+Steps to Implement
+Set up JWT Auth for user authentication.
+Define user roles and permissions in the database.
+Implement NestJS Middleware & Guards for role-based access.
+Secure API endpoints based on user roles.
+
+2. Task Management (CRUD Operations)
+Users can Create, Read, Update, and Delete (CRUD) tasks.
+Tasks include title, description, deadline, priority, and status.
+Users can only modify tasks if they have the correct permissions based on RBAC.
+Steps to Implement
+Design the Task model in the database.
+Create NestJS CRUD API routes (/tasks).
+Implement business logic for task assignment and role validation.
+Connect frontend UI with API using React Query.
+
+3. API & Database (NestJS + Supabase)
+NestJS REST API with CRUD routes for tasks (/tasks).
+PostgreSQL (hosted on Supabase) as the primary database.
+ Prisma for database management.
+Middleware for authentication and role-based authorization.
+Steps to Implement
+Configure PostgreSQL on Supabase.
+Define database schema for users and tasks.
+Implement NestJS services, controllers, and repositories.
+Secure API with JWT authentication.
+
+4. Real-Time Updates & Notifications
+WebSockets (NestJS Gateway) to notify users of new task assignments.
+Task status updates broadcasted in real-time.
+(Optional) Email notifications using Nodemailer for task deadlines.
+Steps to Implement
+Add NestJS WebSocket Gateway.
+Implement event listeners for task updates.
+Update frontend to handle real-time updates.
+(Optional) Configure Nodemailer for email alerts.
+
+5. Frontend with React.js
+JWT-based authentication integrated with a custom auth system.
+Role-based UI with different views for Admin,  and Employee( normal user).
+React Query for optimized API interactions.
+Protected routes to ensure secure access.
+Steps to Implement
+Set up React Router for navigation.
+Implement authentication flow using JWT.
+Create dashboard views for different roles.
+Fetch & display tasks using React Query.
+Final Overview
+This project aims to provide a structured approach to learning and implementing RBAC, API authentication, WebSockets, and frontend-backend integration in a real-world scenario
+
+
+Millekher besh timplemnti li t3almtou fi react w nest  w tekhdem basically el fazet eli besh nets7a9ouhom fil project mte3na  el projet hedha netsawer ichedkom nharin tletha w a3mlou ui simple meghir ta39id besh metekelch wa9t w esta3mlou shadcn (tal9a 3andek components already styled 7adhrin just t3aytelhom fil html mte3ek as simple as that )    besh la7keya tkoun sehla w ken w7eltou fi faza tell me. Enjoy 
+
+
+
+⚠ Don't Forget to push your work on github and share it with me. 
+
+
+
+
